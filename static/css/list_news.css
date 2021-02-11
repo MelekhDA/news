@@ -1,0 +1,22 @@
+.list_news {
+    margin: auto;
+    width: 30%;
+}
+
+@media screen and (max-width: 1048px) {
+    .list_news {
+        margin: auto;
+        width: 60%;
+    }
+}
+
+.link_to_detail_news {
+    display: block;
+    background: #ededed;
+    text-decoration: none;
+    color: #000
+}
+
+.div_prev_next_step {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+.main_div_news {
+    margin: auto;
+    width: 30%;
+}
+
+@media screen and (max-width: 1048px) {
+    .main_div_news {
+        margin: auto;
+        width: 60%;
+    }
+}
+
+.name_news {
+    background: #ededed;
+}
+
+.preview_news {
+    background: #ededed;
+}
+
+.line_between_preview_and_text {
+    background-color: #cfcfcf;
+    color: #cfcfcf;
+    border: none;
+    height: 1px;
+}
+
+.text_news {
+    background: #ededed;
+}
+
+.link_to_back {
+    color: #000;
+    text-decoration: none
+}

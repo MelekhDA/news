@@ -1,0 +1,45 @@
+.main_page_news {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.button_main_page {
+    display: block;
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    background: #ededed;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 1048px) {
+    .main_page_news {
+        width: 60%;
+    }
+
+    .button_main_page {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_page_news {
+        width: 80%;
+    }
+
+    .button_main_page {
+        width: 60%;
+        height: 50px;
+    }
+}
+
+.first_button_main_page {
+    margin-top: 30%;
+}

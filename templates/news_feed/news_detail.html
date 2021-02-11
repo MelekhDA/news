@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/default_body.css" %}"/>
+<link rel="stylesheet" href="{% static "css/news_detail.css" %}"/>
+
+<div class="main_div_news">
+    <h1 class="name_news">{{ news.name }}</h1>
+    <br>
+
+    <p class="preview_news">{{ news.preview }}</p>
+    <hr class="line_between_preview_and_text">
+
+    <div style="background: #ededed;">
+        {% for paragraph in news.array_paragraph_text %}
+            <p>{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+
+    <div>
+        <a href="." class="link_to_back">Вернуться к новостям</a>
+    </div>
+</div>

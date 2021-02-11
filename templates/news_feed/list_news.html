@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/default_body.css" %}"/>
+<link rel="stylesheet" href="{% static "css/list_news.css" %}"/>
+
+<div class="list_news">
+    {% for question in news_reports %}
+        <a href="./{{ question.slug }}" class="link_to_detail_news">
+            <h3>{{ question.name }}</h3>
+            <p>{{ question.preview }}</p>
+        </a>
+    {% endfor %}
+
+    <div class="div_prev_next_step">
+        {% if is_paginated %}
+            {% for i in paginator.page_range %}
+                {% if page_obj.number == i %}
+                    <span>{{ i }} </span>
+                {% else %}
+                    <a href="?page={{ i }}">{{ i }}</a>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
